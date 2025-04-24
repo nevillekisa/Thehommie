@@ -1,1 +1,197 @@
-# Thehommie
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Hommie.ug</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Poppins', sans-serif; background: #f0f2f5; color: #333; }
+    header { background: linear-gradient(135deg,#8e2de2,#4a00e0); color:#fff; padding:2rem 1rem; text-align:center; }
+    header h1 { font-size:2.5rem; font-weight:700; }
+    header p { margin-top:.5rem; font-weight:300; }
+    .marquee { margin-top:1rem; padding:.5rem 0; background:#ff9800; color:#fff; font-weight:600; overflow:hidden; white-space:nowrap; animation:scroll 12s linear infinite; }
+    @keyframes scroll{0%{transform:translateX(100%);}100%{transform:translateX(-100%);}}
+    .container{width:90%;max-width:1200px;margin:2rem auto;}
+    .btn{display:inline-block;padding:.75rem 1.5rem;border-radius:.5rem;font-weight:600;cursor:pointer;transition:.3s;}
+    .btn-primary{background:#ff9800;color:#fff;border:none;}
+    .btn-primary:hover{background:#e68900;}
+    .btn-outline{background:transparent;border:2px solid #ff9800;color:#ff9800;}
+    .btn-outline:hover{background:#ff9800;color:#fff;}
+    h2.section-title{font-size:2rem;text-align:center;margin:3rem 0 1rem;position:relative;}
+    h2.section-title::after{content:'';display:block;width:4rem;height:4px;background:#ff9800;margin:.5rem auto 0;border-radius:2px;}
+    .grid{display:grid;gap:1.5rem;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));}
+    .card{background:#fff;border-radius:.75rem;box-shadow:0 4px 12px rgba(0,0,0,0.05);overflow:hidden;text-align:center;}
+    .card img{width:100%;height:auto;border-bottom:4px solid #ff9800;}
+    .card h3{padding:1rem;font-size:1.1rem;}
+    #front-page{text-align:center;margin:2rem 0;}
+    #front-page img{max-width:100%;border-radius:.75rem;box-shadow:0 4px 12px rgba(0,0,0,0.1);}
+    .vibes-controls{text-align:center;margin-top:1rem;}
+    .vibes-controls .btn{margin:0 .5rem;}
+    footer{background:#222;color:#ccc;text-align:center;padding:2rem 1rem;margin-top:3rem;}
+    .social-icons a{margin:0 .5rem;color:#ccc;font-size:1.5rem;transition:.3s;}
+    .social-icons a:hover{color:#ff9800;}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to The Hommie.ug</h1>
+    <p>Your Home of Entertainment!</p>
+    <div class="marquee">🔥 THE HOMMIE UG - Register & Upload Your Songs Today for free🔥</div>
+  </header>  <div class="container">
+    <div style="display:flex;justify-content:space-between;align-items:center;">
+      <div>
+        <button class="btn btn-primary" onclick="alert('Login coming soon')">LOGIN USER</button>
+        <a class="btn btn-outline" href="CREATE ACCOUNT.html">SIGN UP</a>
+      </div>
+    </div>
+    
+    <section>
+  <h2 class="section-title">Trending News This Week</h2>
+  <div class="grid">
+    <div class="card">
+      <img src="Papa.jpg" alt="Pope Francis" />
+      <h3>POPE FRANCIS, THE VATICAN POPE DIES AT 88 YEARS</h3>
+    </div>
+    <div class="card">
+      <img src="SELF.jpg" alt="Kay Wallet" />
+      <h3>MUSICIAN KAY WALLET ANNOUNCES NEW ALBUM</h3>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2 class="section-title">Vibes Disturbing the City</h2>
+  <div id="front-page">
+    
+    <img  src="pp.jpg" alt="Tambara" />
+    <h3> Tambara by Vic Vibez</h3>
+  </div>
+  <div class="grid">
+    <div class="card news-item">
+      
+      <img src="Avapeace.jpg" alt="Muloodi" />
+      <h3> Ex lover by Joanita Digyal</h3>
+       <audio  controls="Gwok.mp3"</audio>
+    </div>
+    <div class="card news-item">
+      <img src="Pandaa.png" alt="Gwok Ma Mwol" />
+      <h3>Gwok Ma Mwol by Blaiza Panda</h3>
+      <audio  controls="Gwok.mp3"></audio>
+    </div>
+    <div class="card news-item">
+      <img src="ricky.jpg" alt="Uwee" />
+      <h3>Uwee by Ondukupala</h3><audio  controls="Gwok.mp3"</audio>
+    </div>
+    <div class="card news-item">
+      <img src="Bekyera.png" alt="Bekyera" />
+      <h3>Bekyera by Elly Branty X Eddy Banz</h3><audio  controls="Gwok.mp3"</audio>
+    </div>
+    <div class="card news-item">
+      <img src="Moods.jpg" alt="Nambu" />
+      <h3>Nambu by Moods Di Konkara</h3><audio  controls="Gwok.mp3"</audio>
+    </div>
+    <div class="card news-item">
+      <img src="SELF.jpg" alt="Loka Kulu" />
+      <h3>Loka Kulu by Kay Wallet</h3><audio controls= "Loka kulu by kay wallet.mp3"</audio></a>
+    </div>
+  </div>
+  <div class="vibes-controls">
+    <button id="prev" class="btn btn-outline"><i class="fas fa-chevron-left"></i> Previous</button>
+    <button id="shuffle" class="btn btn-outline"><i class="fas fa-random"></i> Shuffle</button>
+    <button id="next" class="btn btn-outline">Next <i class="fas fa-chevron-right"></i></button>
+  </div>
+</section>
+
+<section>
+  <h2 class="section-title">Upcoming Artist? Sign up & Upload</h2>
+  <div>
+    <button class="btn btn-primary" onclick="alert('Login coming soon')">Artist ID</button>
+    <a class="btn btn-outline" href="ARTIST SIGN UP.html">New Artist Profile</a>
+  </div>
+</section>
+
+    
+    
+<section>
+  <h2 class="section-title">Update Your Playlist</h2>
+  <div class="grid">
+    <div class="card">
+      <img src="ricky.jpg" alt="Uwee" />
+      <h3>Uwee by Ondukupala</h3>
+      <button class="btn btn-outline"> <a href="Uweee.mp3"> Download mp3</a> </button>
+    </div>
+    
+    <div class="card">
+      <img src="Wojokdekoda.jpg" alt="Azunga Zunga" />
+      <h3>Azunga Zunga by W'ojok Dekoda</h3>
+      <button class="btn btn-outline"> <a href="Azungazunga.mp3"> Download mp3</a></button>
+    </div>
+    
+    <div class="card">
+      <img src="Fvat.jpg" alt="Drunk a Portion" />
+      <h3>Cingni malo by KoK MC</h3>
+      <button class="btn btn-outline"><a href="Cingini malo by kok mc.mp3"> Download mp3</a></button>
+    </div>
+    
+    <div class="card">
+      <img src="SELF.jpg" alt="Loka Kulu" />
+      <h3>Loka Kulu by Kay Wallet</h3>
+      <button class="btn btn-outline"><a href="Loka Kulu by Kay Wallet.mp3"> Download mp3</a></button>
+    </div>
+    </div>
+  </div>
+</section>
+
+    
+  <h3>ADVERTISE YOUR BUSINESS WITH US </h3>
+    <p>We are dedicated to publishing your business to the world around<br> providing you a wider coverage of targeted audiences  <br>
+      
+      
+      
+  <p>Grow your fanbase today as an Upcoming Artist. Engage your fans with <cite>the hommie ug</cite> and earn your royalties for every 1k online streams </p>  
+      
+      <i <b> The HOMMIE</b></i>
+      "xplore the first News and entertainment.
+    </p>
+  
+    
+<section style="text-align:center;margin:3rem 0;">
+  <h2 class="section-title">Contact Us </h2>
+  <a href="tel:+256751736397/+25678820661" class="btn btn-primary">Call TheHommie UG</a>
+</section>
+
+    
+    
+<footer>
+  <div class="social-icons">
+    <a href="#"><i class="fab fa-facebook"></i></a>
+    <a href="#"><i class="fab fa-instagram"></i></a>
+    <a href="#"><i class="fab fa-youtube"></i></a>
+    <a href="#"><i class="fab fa-twitter"></i></a>
+  </div>
+  <p>&copy; 2025 The Hommie.ug. All rights reserved.</p>
+</footer>
+
+  </div>
+  <script>
+    const items = Array.from(document.querySelectorAll('.news-item'));
+    let index = 0;
+    const fpTitle = document.getElementById('fp-title');
+    const fpImg = document.getElementById('fp-img');
+    function showItem(i) {
+      const itm = items[i];
+      fpTitle.textContent = itm.querySelector('h3').textContent;
+      fpImg.src = itm.querySelector('img').src;
+      fpImg.alt = itm.querySelector('img').alt;
+    }
+    document.getElementById('next').addEventListener('click', () => { index = (index + 1) % items.length; showItem(index); });
+    document.getElementById('prev').addEventListener('click', () => { index = (index - 1 + items.length) % items.length; showItem(index); });
+    document.getElementById('shuffle').addEventListener('click', () => { index = Math.floor(Math.random() * items.length); showItem(index); });
+    showItem(index);
+  </script>
+</body>
+</html>
